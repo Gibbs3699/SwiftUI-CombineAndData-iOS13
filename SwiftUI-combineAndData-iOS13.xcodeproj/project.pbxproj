@@ -14,6 +14,10 @@
 		84992EE92753D5B300F1B4F6 /* AccountBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992EE82753D26C00F1B4F6 /* AccountBackground.swift */; };
 		84992EEA2753D5B400F1B4F6 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992EE72753D26C00F1B4F6 /* VisualEffectBlur.swift */; };
 		84992EEC2753D64400F1B4F6 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992EEB2753D64400F1B4F6 /* TrackableScrollView.swift */; };
+		84992EF02754974C00F1B4F6 /* MenuRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992EEF2754974C00F1B4F6 /* MenuRow.swift */; };
+		84992EF22754992E00F1B4F6 /* GradientIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992EF12754992E00F1B4F6 /* GradientIcon.swift */; };
+		84992EF42755301D00F1B4F6 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992EF32755301D00F1B4F6 /* FAQView.swift */; };
+		84992EF62755302C00F1B4F6 /* PackagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84992EF52755302C00F1B4F6 /* PackagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		84992EE72753D26C00F1B4F6 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		84992EE82753D26C00F1B4F6 /* AccountBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountBackground.swift; sourceTree = "<group>"; };
 		84992EEB2753D64400F1B4F6 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		84992EEF2754974C00F1B4F6 /* MenuRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRow.swift; sourceTree = "<group>"; };
+		84992EF12754992E00F1B4F6 /* GradientIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientIcon.swift; sourceTree = "<group>"; };
+		84992EF32755301D00F1B4F6 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
+		84992EF52755302C00F1B4F6 /* PackagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,15 @@
 		84992ED62753D21D00F1B4F6 /* SwiftUI-combineAndData-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				84992EFC275530A500F1B4F6 /* Components */,
+				84992EF92755306100F1B4F6 /* Rows */,
+				84992EF82755305200F1B4F6 /* Views */,
 				84992EE62753D25A00F1B4F6 /* Graphics */,
 				84992ED72753D21D00F1B4F6 /* SwiftUI_combineAndData_iOS13App.swift */,
 				84992ED92753D21D00F1B4F6 /* ContentView.swift */,
 				84992EDB2753D21F00F1B4F6 /* Assets.xcassets */,
 				84992EE02753D21F00F1B4F6 /* Info.plist */,
 				84992EDD2753D21F00F1B4F6 /* Preview Content */,
-				84992EEB2753D64400F1B4F6 /* TrackableScrollView.swift */,
 			);
 			path = "SwiftUI-combineAndData-iOS13";
 			sourceTree = "<group>";
@@ -84,6 +94,49 @@
 				84992EE72753D26C00F1B4F6 /* VisualEffectBlur.swift */,
 			);
 			path = Graphics;
+			sourceTree = "<group>";
+		};
+		84992EF82755305200F1B4F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84992EF32755301D00F1B4F6 /* FAQView.swift */,
+				84992EF52755302C00F1B4F6 /* PackagesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84992EF92755306100F1B4F6 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				84992EEF2754974C00F1B4F6 /* MenuRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		84992EFA2755308A00F1B4F6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				84992EF12754992E00F1B4F6 /* GradientIcon.swift */,
+			);
+			name = Other;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		84992EFB2755309100F1B4F6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				84992EEB2753D64400F1B4F6 /* TrackableScrollView.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		84992EFC275530A500F1B4F6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				84992EFB2755309100F1B4F6 /* Utils */,
+				84992EFA2755308A00F1B4F6 /* Other */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,8 +211,12 @@
 				84992EE92753D5B300F1B4F6 /* AccountBackground.swift in Sources */,
 				84992EEC2753D64400F1B4F6 /* TrackableScrollView.swift in Sources */,
 				84992EEA2753D5B400F1B4F6 /* VisualEffectBlur.swift in Sources */,
+				84992EF42755301D00F1B4F6 /* FAQView.swift in Sources */,
+				84992EF62755302C00F1B4F6 /* PackagesView.swift in Sources */,
+				84992EF22754992E00F1B4F6 /* GradientIcon.swift in Sources */,
 				84992EDA2753D21D00F1B4F6 /* ContentView.swift in Sources */,
 				84992ED82753D21D00F1B4F6 /* SwiftUI_combineAndData_iOS13App.swift in Sources */,
+				84992EF02754974C00F1B4F6 /* MenuRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
